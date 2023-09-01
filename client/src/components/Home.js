@@ -46,6 +46,13 @@ function Home() {
   useEffect(()=>{
     getUserData()
   },[dltUser]);
+  // useEffect(() => {
+  //   axios.get("https://keeper-5zd9.onrender.com/notes")
+  //   .then((data) => {
+  //     setNotes(data.data);
+  //   })
+  //   .catch( (err) => console.log(err));
+  // }, []);
 
   return (
     <>
