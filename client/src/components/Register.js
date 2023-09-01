@@ -14,6 +14,7 @@ function Register() {
   function setName(event){
     const {value} = event.target
     setFname(value);
+    console.log(fname);
   }
   function setImg(event){
     const file = event.target.files[0];
