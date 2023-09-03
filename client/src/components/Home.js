@@ -24,6 +24,7 @@ function Home() {
       console.log("error...");
     }else{
       const newData = res.data.getUser;
+      // console.log(newData);
       setData(newData);
     }
     
@@ -78,7 +79,7 @@ function Home() {
           return(
             <>
             <Card style={{ width: "22rem", height: "18rem" }} className="align-items-center mb-3">
-          <Card.Img variant="top" style={{ width: "100px", textAlign: "center", margin: "auto" }} src={`/uploads/${ele.imgpath}`} className="mt-2"/>
+          <Card.Img variant="top" style={{ width: "100px", textAlign: "center", margin: "auto" }}  className="mt-2"/>
           <Card.Body className="text-center">
             <Card.Title>User Name: {ele.fname}</Card.Title>
             <Card.Text>
