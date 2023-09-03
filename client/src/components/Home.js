@@ -12,7 +12,7 @@ function Home() {
 
   const [show, setShow] = useState(false);
 
-  
+  console.log(data);
   const getUserData = async()=>{
     const res = await axios.get("/getdata",{
       headers:{
