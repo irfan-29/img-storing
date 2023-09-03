@@ -23,7 +23,8 @@ function Home() {
     if(res.data.status === 401 || !res.data){
       console.log("error...");
     }else{
-      setData(res.data.getUser);
+      const newData = res.data.getUser;
+      setData(newData);
     }
     
   }
